@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="En-US">
+  <body>
+    <listing id="to-do">
+      To do list:
+
+      &gt; Finish this assignment
+      &gt; Learn how to do a backflip
+      &gt; Do my laundry
+      &gt; Figure out the meaning of life
+      &gt; Clean my bedroom
+      &gt; Figure out what’s on the other side of that door
+      &gt; Run a Marathon
+    </listing>
+    <listing id="about">
+      About:
+
+      &gt; Student at the University of Chicago
+      &gt; Majoring in Computer Science &amp; Media Arts and Design
+      &gt; Proficient at sleeping for extended periods of time
+      &gt; Enjoys doing improv comedy and writing satire
+      &gt; Can sit in a chair for an extended duration
+      &gt; The new Bruno Mars album is pretty good
+      &gt; Will probably not follow through on that whole marathon thing
+    </listing>
+    <p id="floatinglink">
+      <a href="https://www.w3schools.com">Visit W3Schools</a>
+    </p>
+  </body>
+  <style>
+    body {
+      background-image: url('vaporwave-gif-3.gif');
+      background-size: cover;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    #to-do {
+      font-size: 18px;
+      color: white;
+      float: left;
+    }
+
+    #about {
+      font-size: 18px;
+      color: white;
+      text-align: left;
+      vertical-align: text-top;
+      float: right
+    }
+    
+    #floatinglink {
+      position: absolute;
+      top: 500px;
+      font-size: 30px;
+      color: white;
+    	animation: moving 3s, rotating 3s infinite;
+		}
+
+		@keyframes rotating {
+      100% {
+        transform: rotateZ(360deg);
+      }
+		}
+    @keyframes moving {
+      100% {
+        transform: translateX(400px);
+      }
+    }
+  </style>
+
+</html>
