@@ -5,26 +5,26 @@
       To do list:
 
       &gt; Finish this assignment
-      &gt; Learn how to do a backflip
+      &gt; Learn how to do a <a target="_blank" id="one" href= "https://media.giphy.com/media/YTJXDIivNMPuNSMgc0/giphy.gif">backflip</a>
       &gt; Do my laundry
       &gt; Figure out the meaning of life
-      &gt; Clean my bedroom
-      &gt; Figure out what’s on the other side of that door
+      &gt; Clean my <a target="_blank" id="two" href= "https://media.giphy.com/media/jqr3YlWh9yUvXk5LQ0/giphy.gif">bedroom</a>
+      &gt; Figure out what’s on the other side of that <a target="_blank" id="three" href= "https://media.giphy.com/media/Rm3cJx7OmvFWld8bM0/giphy.gif">door</a> 
       &gt; Run a Marathon
     </listing>
     <listing id="about">
       About:
 
       &gt; Student at the University of Chicago
-      &gt; Majoring in Computer Science &amp; Media Arts and Design
+      &gt; Majoring in <a target="_blank" id="four" href= "http://collegecatalog.uchicago.edu/thecollege/computerscience/">Computer Science</a> &amp; <a target="_blank" id="six" href= "http://collegecatalog.uchicago.edu/thecollege/MediaArtsandDesign/">Media Arts and Design</a>
       &gt; Proficient at sleeping for extended periods of time
       &gt; Enjoys doing improv comedy and writing satire
       &gt; Can sit in a chair for an extended duration
-      &gt; The new Bruno Mars album is pretty good
+      &gt; I think the new <a target="_blank" id="seven" href= "https://www.youtube.com/watch?v=-cy_tDQPXHk">Bruno Mars Album</a> is pretty good
       &gt; Will probably not follow through on that whole marathon thing
     </listing>
     <p id="floatinglink">
-      <a href="https://www.w3schools.com">Visit W3Schools</a>
+      <a target="_blank" id="floaty" href= "https://www.youtube.com/watch?v=KT7F15T9VBI">L I S T E N T O T H I S</a>
     </p>
   </body>
   <style>
@@ -37,17 +37,41 @@
     }
 
     #to-do {
-      font-size: 18px;
+      font-size: 15px;
       color: white;
       float: left;
     }
 
     #about {
-      font-size: 18px;
+      font-size: 15px;
       color: white;
       text-align: left;
       vertical-align: text-top;
       float: right
+    }
+    #floaty {
+      color: red
+    }
+    #floaty:visited {
+      color: pink
+    }
+    #one {
+      color: #3b5470
+    }
+    #two {
+      color: #9e5470
+    }
+    #three {
+      color: #ce5437
+    }
+    #four {
+      color: #25b8a9
+    }
+    #six {
+      color: #ff541b
+    }
+    #seven {
+      color: #ff549f
     }
     
     #floatinglink {
@@ -55,17 +79,23 @@
       top: 500px;
       font-size: 30px;
       color: white;
-    	animation: moving 3s, rotating 3s infinite;
+    	animation: moving-1 3s, rotating-1 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
 		}
 
-		@keyframes rotating {
+		@keyframes rotating-1 {
       100% {
-        transform: rotateZ(360deg);
+        transform: rotateZ(440deg);
       }
 		}
-    @keyframes moving {
-      100% {
-        transform: translateX(400px);
+    @keyframes moving-1 {
+      from {
+        margin-left: 0%
+      }
+      to {
+        margin-left: 80%
       }
     }
   </style>
