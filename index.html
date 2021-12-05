@@ -1,103 +1,113 @@
 <!DOCTYPE html>
 <html lang="En-US">
   <body>
+    <head>
+      <meta charset="utf-8">
+      <title>Digital Garden- Andre</title>
+      <style>
+        body {
+          background-image: url("vaporwave-gif-3.gif");
+          background-size: cover;
+          height: 100vh;
+          padding: 0;
+          margin: 0;
+        }
+
+        #to-do {
+          font-size: 15px;
+          color: white;
+          float: left;
+        }
+
+        #about {
+          font-size: 15px;
+          color: white;
+          text-align: left;
+          vertical-align: text-top;
+          float: right
+        }
+
+        #floaty {
+          color: red
+        }
+
+        #floaty:visited {
+          color: pink
+        }
+
+        #one {
+          color: #3b5470
+        }
+
+        #two {
+          color: #9e5470
+        }
+
+        #three {
+          color: #ce5437
+        }
+
+        #four {
+          color: #25b8a9
+        }
+
+        #six {
+          color: #ff541b
+        }
+
+        #seven {
+          color: #ff549f
+        }
+
+        #floatinglink {
+          position: absolute;
+          top: 500px;
+          font-size: 30px;
+          color: white;
+          animation: moving-1 3s, rotating-1 3s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+
+        @keyframes rotating-1 {
+          100% {
+            transform: rotateZ(440deg);
+          }
+        }
+
+        @keyframes moving-1 {
+          from {margin-left: 0%}
+          to {margin-left: 80%}
+        }
+      </style>
+    </head>
     <listing id="to-do">
       To do list:
 
       &gt; Finish this assignment
-      &gt; Learn how to do a <a target="_blank" id="one" href= "https://media.giphy.com/media/YTJXDIivNMPuNSMgc0/giphy.gif">backflip</a>
+      &gt; Learn how to do a <a target="_blank" id="one" href="https://media.giphy.com/media/YTJXDIivNMPuNSMgc0/giphy.gif">backflip</a>
       &gt; Do my laundry
       &gt; Figure out the meaning of life
-      &gt; Clean my <a target="_blank" id="two" href= "https://media.giphy.com/media/jqr3YlWh9yUvXk5LQ0/giphy.gif">bedroom</a>
-      &gt; Figure out what’s on the other side of that <a target="_blank" id="three" href= "https://media.giphy.com/media/Rm3cJx7OmvFWld8bM0/giphy.gif">door</a> 
+      &gt; Clean my <a target="_blank" id="two" href="https://media.giphy.com/media/jqr3YlWh9yUvXk5LQ0/giphy.gif">bedroom</a>
+      &gt; Figure out what’s on the other side of that <a target="_blank" id="three" href="https://media.giphy.com/media/Rm3cJx7OmvFWld8bM0/giphy.gif">door</a>
       &gt; Run a Marathon
     </listing>
     <listing id="about">
       About:
 
       &gt; Student at the University of Chicago
-      &gt; Majoring in <a target="_blank" id="four" href= "http://collegecatalog.uchicago.edu/thecollege/computerscience/">Computer Science</a> &amp; <a target="_blank" id="six" href= "http://collegecatalog.uchicago.edu/thecollege/MediaArtsandDesign/">Media Arts and Design</a>
+      &gt; Majoring in <a target="_blank" id="four" href="http://collegecatalog.uchicago.edu/thecollege/computerscience/">Computer Science</a> &amp; <a target="_blank" id="six" href="http://collegecatalog.uchicago.edu/thecollege/MediaArtsandDesign/">Media Arts and Design</a>
       &gt; Proficient at sleeping for extended periods of time
       &gt; Enjoys doing improv comedy and writing satire
       &gt; Can sit in a chair for an extended duration
-      &gt; I think the new <a target="_blank" id="seven" href= "https://www.youtube.com/watch?v=-cy_tDQPXHk">Bruno Mars Album</a> is pretty good
+      &gt; I think the new <a target="_blank" id="seven" href="https://www.youtube.com/watch?v=-cy_tDQPXHk">Bruno Mars Album</a> is pretty good
       &gt; Will probably not follow through on that whole marathon thing
     </listing>
     <p id="floatinglink">
-      <a target="_blank" id="floaty" href= "https://www.youtube.com/watch?v=KT7F15T9VBI">L I S T E N T O T H I S</a>
+      <a target="_blank" id="floaty" href="https://www.youtube.com/watch?v=KT7F15T9VBI">L I S T E N T O T H I S</a>
     </p>
   </body>
-  <style>
-    body {
-      background-image: url('vaporwave-gif-3.gif');
-      background-size: cover;
-      height: 100vh;
-      padding: 0;
-      margin: 0;
-    }
 
-    #to-do {
-      font-size: 15px;
-      color: white;
-      float: left;
-    }
-
-    #about {
-      font-size: 15px;
-      color: white;
-      text-align: left;
-      vertical-align: text-top;
-      float: right
-    }
-    #floaty {
-      color: red
-    }
-    #floaty:visited {
-      color: pink
-    }
-    #one {
-      color: #3b5470
-    }
-    #two {
-      color: #9e5470
-    }
-    #three {
-      color: #ce5437
-    }
-    #four {
-      color: #25b8a9
-    }
-    #six {
-      color: #ff541b
-    }
-    #seven {
-      color: #ff549f
-    }
-    
-    #floatinglink {
-      position: absolute;
-      top: 500px;
-      font-size: 30px;
-      color: white;
-    	animation: moving-1 3s, rotating-1 3s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-		}
-
-		@keyframes rotating-1 {
-      100% {
-        transform: rotateZ(440deg);
-      }
-		}
-    @keyframes moving-1 {
-      from {
-        margin-left: 0%
-      }
-      to {
-        margin-left: 80%
-      }
-    }
-  </style>
 
 </html>
